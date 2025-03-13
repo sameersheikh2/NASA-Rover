@@ -1,3 +1,5 @@
+const API_KEY = "BPNOu98BiffUt0A27uy9F9ZhUy20iIZPruVHeOrB";
+
 const apiUrl =
   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos";
 
