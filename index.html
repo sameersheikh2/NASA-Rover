@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA🚀</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="loaders">
+      <div class="loader" id="loading-container"></div>
+      <p id="loading-text"></p>
+    </div>
+
+    <div id="main-container" class="container">
+      <div class="controls">
+        <input type="date" id="date" />
+
+        <select id="sol">
+          <option value="">Select Sol</option>
+          <option value="1000">1000</option>
+          <option value="1500">1500</option>
+          <option value="2000">2000</option>
+        </select>
+
+        <select id="camera">
+          <option value="">Select Camera</option>
+          <option value="FHAZ">Front Hazard Avoidance Camera</option>
+          <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+          <option value="MAST">Mast Camera</option>
+          <option value="NAVCAM">Navigation Camera</option>
+        </select>
+      </div>
+
+      <button id="filterPhotos" style="cursor: pointer">Filter</button>
+    </div>
+    <div id="photos" class="photo-container"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
