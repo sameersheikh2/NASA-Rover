@@ -80,7 +80,7 @@ button,
 
 .photo-container {
   display: grid;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
   transition: all 0.3s ease-in-out;
 }

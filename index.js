@@ -79,10 +79,15 @@ async function fetchPhotos() {
     }
 
     data.photos.forEach((photo) => {
+      const div = document.createElement("div");
       const img = document.createElement("img");
+      const span = document.createElement("span");
       img.src = photo.img_src;
       img.alt = "Mars Rover Photo";
-      photosContainer.appendChild(img);
+      span.innerText = photo.earth_date;
+      div.appendChild(img);
+      div.appendChild(span);
+      photosContainer.appendChild(div);
     });
   } catch (error) {
     console.error("Failed to fetch photos:", error);
